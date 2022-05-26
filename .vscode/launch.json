@@ -8,8 +8,8 @@
             "name": "first",
             "request": "launch",
             "type": "dart",
-            "program": "bin/first.dart",
-            "args": ["12", "13","13"]
+            "program": "bin/first.dart", // program parameter is used to point out the path of the file to run
+            "args": ["12", "13","13"] // args paramter is used to pass the arguments to the program
         }
     ]
 }
