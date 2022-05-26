@@ -69,3 +69,7 @@ packages:
 <hr/>
 
 # Dart Linting 
+- used to check for warnings and errors
+- `pedantic` is one of the popular linting package contains the linting rules used by google for creating thier apps.
+- `analysis_options.yaml` is responsible for the specidifying the rules for linting
+- to see the depedancy code go to the vs code `DEPENDACIES` section
