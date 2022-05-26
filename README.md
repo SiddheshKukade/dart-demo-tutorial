@@ -75,3 +75,11 @@ packages:
 - to see the depedancy code go to the vs code `DEPENDACIES` section
 - 
 ![image](https://user-images.githubusercontent.com/65951872/170520357-f1bb1730-1d50-40f9-84c0-6815d3b94a88.png)
+
+- `very-good-analyzer ` is also another linting pacakage used by <b>very-good ventures </b>
+
+# Dart Tests 
+- Ideally for every feature and Functionality we should have a test checking functionality to prove it's robusness.
+- `/test` folder in dart contains all the testing code.
+- Unit tests can be executed from code editor or from the dart cli
+- `dart test` is command to run all the tests.
