@@ -73,3 +73,5 @@ packages:
 - `pedantic` is one of the popular linting package contains the linting rules used by google for creating thier apps.
 - `analysis_options.yaml` is responsible for the specidifying the rules for linting
 - to see the depedancy code go to the vs code `DEPENDACIES` section
+- 
+![image](https://user-images.githubusercontent.com/65951872/170520357-f1bb1730-1d50-40f9-84c0-6815d3b94a88.png)
