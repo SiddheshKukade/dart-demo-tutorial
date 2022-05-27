@@ -83,3 +83,33 @@ packages:
 - `/test` folder in dart contains all the testing code.
 - Unit tests can be executed from code editor or from the dart cli
 - `dart test` is command to run all the tests.
+
+# Execution and Compilation of Dart Programs 
+## Dart Running Workflew
+### Dev Phase :
+- Fast & Stable Developement Workflow
+- Quick Analayzer & Reformatting tools
+- Fast Compilation and Recompilation
+- Code Optimization Techniques
+- Intuitive Debugging tools
+
+### Prod Phase :
+- Focused primarily on UX 
+- Fast Startup time
+- Usefulness , reliability, stability
+- Good-lookingness , Interactivity
+- Testing in real world scenarios
+
+### Dart VM - Provides the execution environment for the dart apps , for production dart also uses a strip down version of dart vm for improved performance
+- any code inside the vm runs on an isolated environment
+- it is also known as isolated dart universe 
+- it has it's own heap memory for it;s own thread of control for mutators and helper threads
+- heap is a garbage collector managed memory storage for all the objects allocated by the    programs
+- garbage collector reclaims memory which was allocted to program but it is no longer referenced.
+
+#### Dart VM Executes the Source code in 2 ways : 
+1. from `source ` by using `JIT/AOT` compiler
+  1.1 Running the source code from JIT Compiler
+    - use `dart run ` command
+      -  the code goes to the dart vm but dart VM can only run kernel binaries `(.dill files)` [contains serialed kernal abstract syntax as well as kernel AST] kernel AST is based on intermediatery language such as dart  
+2. from Snapshots (jit, aot or kernel snapshots) 
