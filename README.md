@@ -151,6 +151,6 @@ packages:
 
 # Dart Pacakges 
 ### Dart Package is just a library containing   `pubspec.yml` file . it supports the follwing fields in it: 
-![image](https://user-images.githubusercontent.com/65951872/170662427-5d3f6231-b1ac-43f3-a861-406f237f1d83.png)
+![image](https://user-images.githubusercontent.com/65951872/170663146-a0a6efb9-500a-4d5b-9b53-c0b3e61b5c14.png)
 
 
