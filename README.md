@@ -127,6 +127,17 @@ packages:
 2. from Snapshots (jit, aot or kernel snapshots) 
 ![image](https://user-images.githubusercontent.com/65951872/170609184-56244f45-1349-48a3-8d11-c30f7ef2120a.png)
 
+### Snapshot : 
+  - What is snapshot - it just contains efficient representation of the entities that are allocated to the dart VM heap memory. this heap is traversed just before calling the main function.
+  - It is optimized for faster startup times so insted of parsing the whole source again  
+  - basically the heap data is serialized in the snapshot file and it is then deserialized to heap memory again by the Dart VM to run it faster. 
+    - 3 types of snapshot :
+    1. JIT Snapshot - contains all parsed ,classes and code during our training run
+      - training run - `dart compile jit-snapshot .\bin\first.dart` and `dart run .\bin\<YOUR_PROJECT_NAME>.dart` is faster than `dart run ` [50 % Time improvement.] 
+    2. AOT Snapshot - Not uses training run . uses standard AOT Compilation approach so that the VM can directly run the snapshot without having to redo to the compilations and optimizations.
+    - difference between AOT Compilation & AOT Snapshot Compilation is that  
+    3. Kernel Snapshot - portable around all cpu ; dart vm still needs to compile this 
+
 3. to see the corresponding kernel file : 
   `dart compile kernel .\bin\<YOUR_PROJECT_NAME>.dart` 
 
