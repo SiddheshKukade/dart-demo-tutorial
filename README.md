@@ -109,9 +109,15 @@ packages:
 
 #### Dart VM Executes the Source code in 2 ways : 
 1. from `source ` by using `JIT/AOT` compiler
-  1.1 Running the source code from JIT Compiler
+ - 1.1 Running the source code from JIT Compiler
     - use `dart run ` command
       -  the code goes to the dart vm but dart VM can only run kernel binaries `(.dill files)` [contains serialed kernal abstract syntax as well as kernel AST] kernel AST is based on intermediatery language such as dart  
+      - ![image](https://user-images.githubusercontent.com/65951872/170646710-ca81978e-65b7-43ea-8789-e08224fc856b.png)
+      - After running `dart run ` command : 
+      ![image](https://user-images.githubusercontent.com/65951872/170647028-d52c0720-9ffb-4584-a6f2-96e19ad7a525.png)
+ - 1.2 Running from source code using AOT Compiler :
+      - mainly used for prod env 
+       
 2. from Snapshots (jit, aot or kernel snapshots) 
 ![image](https://user-images.githubusercontent.com/65951872/170609184-56244f45-1349-48a3-8d11-c30f7ef2120a.png)
 
@@ -121,6 +127,7 @@ packages:
 4. Once this kernel binary is loaded in VM then it is parsed into various programming entities like Classes , Fields , Procedure , libraries ,etc.
 
 5. this process is done in a LAZY way it parses basic information first and each pointer then points to the kernel binary so that later on it can continue parsing hence the name Just In Time Compiler. 
- ![image](https://user-images.githubusercontent.com/65951872/170646710-ca81978e-65b7-43ea-8789-e08224fc856b.png)
-![image](https://user-images.githubusercontent.com/65951872/170647028-d52c0720-9ffb-4584-a6f2-96e19ad7a525.png)
+
+
+
 
