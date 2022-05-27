@@ -122,4 +122,5 @@ packages:
 
 5. this process is done in a LAZY way it parses basic information first and each pointer then points to the kernel binary so that later on it can continue parsing hence the name Just In Time Compiler. 
  ![image](https://user-images.githubusercontent.com/65951872/170646710-ca81978e-65b7-43ea-8789-e08224fc856b.png)
+![image](https://user-images.githubusercontent.com/65951872/170647028-d52c0720-9ffb-4584-a6f2-96e19ad7a525.png)
 
