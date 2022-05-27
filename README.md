@@ -119,6 +119,10 @@ packages:
       - mainly used for prod env 
        ![image](https://user-images.githubusercontent.com/65951872/170648047-8a92fff5-6671-4ab0-a0df-3e15b2819970.png)
         ![image](https://user-images.githubusercontent.com/65951872/170648193-fac15aeb-f5d1-4171-bdeb-d8faa0be8fd1.png)
+      - tfa removes unreachable methods 
+      - replaces indirect virtual function calls to direct function calls.
+      - AOT is based on JIT but with added optimizations. 
+      - to use AOT Compiler `dart compile exe .\bin\<YOUR_PROJECT_NAME>.dart`                     
 
 2. from Snapshots (jit, aot or kernel snapshots) 
 ![image](https://user-images.githubusercontent.com/65951872/170609184-56244f45-1349-48a3-8d11-c30f7ef2120a.png)
