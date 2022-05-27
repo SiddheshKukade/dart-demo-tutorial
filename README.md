@@ -113,3 +113,5 @@ packages:
     - use `dart run ` command
       -  the code goes to the dart vm but dart VM can only run kernel binaries `(.dill files)` [contains serialed kernal abstract syntax as well as kernel AST] kernel AST is based on intermediatery language such as dart  
 2. from Snapshots (jit, aot or kernel snapshots) 
+![image](https://user-images.githubusercontent.com/65951872/170609184-56244f45-1349-48a3-8d11-c30f7ef2120a.png)
+
