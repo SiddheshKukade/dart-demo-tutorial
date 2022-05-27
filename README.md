@@ -117,7 +117,9 @@ packages:
       ![image](https://user-images.githubusercontent.com/65951872/170647028-d52c0720-9ffb-4584-a6f2-96e19ad7a525.png)
  - 1.2 Running from source code using AOT Compiler :
       - mainly used for prod env 
-       
+       ![image](https://user-images.githubusercontent.com/65951872/170648047-8a92fff5-6671-4ab0-a0df-3e15b2819970.png)
+        ![image](https://user-images.githubusercontent.com/65951872/170648193-fac15aeb-f5d1-4171-bdeb-d8faa0be8fd1.png)
+
 2. from Snapshots (jit, aot or kernel snapshots) 
 ![image](https://user-images.githubusercontent.com/65951872/170609184-56244f45-1349-48a3-8d11-c30f7ef2120a.png)
 
