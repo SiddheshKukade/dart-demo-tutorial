@@ -135,7 +135,10 @@ packages:
     1. JIT Snapshot - contains all parsed ,classes and code during our training run
       - training run - `dart compile jit-snapshot .\bin\first.dart` and `dart run .\bin\<YOUR_PROJECT_NAME>.dart` is faster than `dart run ` [50 % Time improvement.] 
     2. AOT Snapshot - Not uses training run . uses standard AOT Compilation approach so that the VM can directly run the snapshot without having to redo to the compilations and optimizations.
-    - difference between AOT Compilation & AOT Snapshot Compilation is that  
+    - difference between AOT Compilation & AOT Snapshot Compilation 
+    - ![image](https://user-images.githubusercontent.com/65951872/170652218-23974ef9-b446-4b75-97c3-95afa53e5960.png)
+    - ![image](https://user-images.githubusercontent.com/65951872/170652299-67049e42-07cd-405b-b20e-e4474a14fd7d.png)
+ 
     3. Kernel Snapshot - portable around all cpu ; dart vm still needs to compile this 
 
 3. to see the corresponding kernel file : 
