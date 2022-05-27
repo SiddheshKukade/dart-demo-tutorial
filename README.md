@@ -113,5 +113,11 @@ packages:
     - use `dart run ` command
       -  the code goes to the dart vm but dart VM can only run kernel binaries `(.dill files)` [contains serialed kernal abstract syntax as well as kernel AST] kernel AST is based on intermediatery language such as dart  
 2. from Snapshots (jit, aot or kernel snapshots) 
+![image](https://user-images.githubusercontent.com/65951872/170609184-56244f45-1349-48a3-8d11-c30f7ef2120a.png)
+
 3. to see the corresponding kernel file : 
-  `dart compile kernel .\bin\first.dill` 
+  `dart compile kernel .\bin\<YOUR_PROJECT_NAME>.dart` 
+
+4. Once this kernel binary is loaded in VM then it is parsed into various programming entities like Classes , Fields , Procedure , libraries ,etc.
+
+5. this process is done in a LAZY way it parses basic information first and each pointer then points to the kernel binary so that later on it can continue parsing hence the name Just In Time Compiler. cf
