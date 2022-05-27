@@ -153,4 +153,25 @@ packages:
 ### Dart Package is just a library containing   `pubspec.yml` file . it supports the follwing fields in it: 
 ![image](https://user-images.githubusercontent.com/65951872/170663146-a0a6efb9-500a-4d5b-9b53-c0b3e61b5c14.png)
 
+## Types of dependancies : 
+1. Immediate Dependancies
+2. Transitive Dependancies
+3. Regular Dependacies - used for both prod and dev environment
+4. Dev Dependacies - only be used during the developement phase
+### Ex . if you pacakge depends on a and a -> b and b-> c (-> means depends on) then a is immediate depedancy and b and c are transitive dependacies.
 
+# Dart Community uses semantic versioning for packages refer (semver.org)[https://www.semver.org]
+## Ways to specify version constriats 
+1. Caret Syntax ^ `ex . ^1.2.3 , ^0.1.2`
+2. traditional syntax =  `ex.  >=1.2.3 <2.0.0 , >=0.1.2 <0.2.0`
+
+### Don't use caret syntax for SDK Constraint instead use traditional method 
+
+## Alternatives for pub.dev 
+- hosted pacakges on HTTP Servers 
+- git packages
+- path packages - multiple realted pacakages ,ex. creating big app that depends on smaller pakcages
+- sdk source - packages that came along with the SDKs [currently flutter is only supported here ]
+
+### Packages are stored on a special folder on local machine which can be specified via setting PUB_CACHE Environment variable
+#### you can see this path on `package_config.json` file.
